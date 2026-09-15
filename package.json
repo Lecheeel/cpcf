@@ -1,0 +1,17 @@
+{
+  "name": "cpcf",
+  "version": "1.0.0",
+  "description": "中國人能飛 — an interactive digital poster",
+  "private": true,
+  "scripts": {
+    "start": "node scripts/serve.cjs",
+    "test": "node scripts/check.cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  }
+}

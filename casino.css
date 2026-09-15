@@ -1,0 +1,69 @@
+/* The extra layer of 2005 casino-ad excess. All ornaments are local CSS/SVG. */
+.artboard{background:radial-gradient(ellipse at 50% 66%,#ffedb2 0%,#c5d5b4 31%,#699da9 63%,#265770 100%)}
+.halftone{opacity:.49}.sunburst{opacity:.95}
+.marquee-lights{position:absolute;inset:0;z-index:19;pointer-events:none;border:5px solid #90500e;box-shadow:inset 0 0 0 1px #ffdc69,inset 0 0 20px #85390055}
+.marquee-bulb{position:absolute;width:6px;height:6px;border-radius:50%;background:#ffeb8e;box-shadow:0 0 3px 1px #fff1a6,0 0 9px #ffb414;animation:bulb-chase 1.8s linear infinite;animation-delay:var(--delay)}
+@keyframes bulb-chase{0%,24%{opacity:1;background:#fffddd;box-shadow:0 0 5px 2px #fff1a6,0 0 12px #ffb414}25%,100%{opacity:.45;background:#e7a430;box-shadow:0 0 3px #ffb414}}
+.edge-glint{position:absolute;left:var(--gx);top:var(--gy);width:var(--gs);height:var(--gs);z-index:18;pointer-events:none;translate:-50% -50%;font-size:initial;font-style:normal;line-height:1;filter:drop-shadow(0 0 4px #ffda4d);animation:edge-shine var(--gd) ease-in-out infinite;animation-delay:var(--delay);background:radial-gradient(circle,#fff 0 3%,#fffaac 4%,#ffda5a70 12%,transparent 42%)}
+.edge-glint:before,.edge-glint:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(135deg,#fff 25%,#fff8b8 50%,#ffd139);clip-path:polygon(50% 0,55% 42%,100% 50%,55% 56%,50% 100%,44% 56%,0 50%,44% 43%)}
+.glint-cross:after{inset:22%;rotate:45deg;background:#fff}
+.glint-needle:before{rotate:25deg}.glint-needle:after{rotate:70deg;scale:.64;background:linear-gradient(#fff,#fdf6b5)}
+.glint-sun:before{background:repeating-conic-gradient(from 5deg,#fff1a1 0deg 2deg,transparent 2deg 22.5deg);clip-path:circle(50%);animation:glint-spin 17s linear infinite}
+.glint-sun:after{inset:25%;rotate:15deg}
+.glint-lens{background:radial-gradient(ellipse,#fff 0 3%,#c7faffaa 7%,#98f4ff33 21%,transparent 55%);filter:drop-shadow(0 0 4px #b9f5ff)}
+.glint-lens:before{scale:1.65 .45;background:linear-gradient(90deg,transparent,#bef6ff 28%,#fff 50%,#fff4a9 72%,transparent)}
+.glint-lens:after{scale:.45 1;rotate:8deg}
+.glint-prism:before{clip-path:polygon(50% 0,80% 48%,50% 100%,20% 48%);background:conic-gradient(from 45deg,#fff,#95eced,#fff8c7,#b588e4,#fff)}
+.glint-prism:after{inset:-20%;scale:.8;rotate:45deg;opacity:.7}
+@keyframes edge-shine{0%,100%{scale:.55;opacity:.28}32%{scale:.85;opacity:.7}48%,56%{scale:1.13;opacity:1}78%{scale:.7;opacity:.55}}
+@keyframes glint-spin{to{rotate:360deg}}
+.car-glints{position:absolute;z-index:9;pointer-events:none;animation:levitate 6s ease-in-out infinite reverse;display:flex;align-items:center;justify-content:center}
+.car-glint-inner{position:relative;aspect-ratio:220/149;height:100%;max-width:100%}
+.collage .mansion-glints{position:absolute;z-index:4;mask-image:none;-webkit-mask-image:none;filter:none;pointer-events:none}
+.flying .car-glints{animation:takeoff 3.6s ease-in-out both}
+.roulette-rays{position:absolute;width:28%;aspect-ratio:1;top:35%;background:repeating-conic-gradient(#fff78a 0deg 2deg,transparent 2deg 12deg);mask-image:radial-gradient(circle,transparent 8%,#000 15%,#000 48%,transparent 70%);opacity:.65;animation:glint-spin 48s linear infinite}
+.rays-left{left:2%}.rays-right{right:2%;animation-direction:reverse}
+.gold-chains{position:absolute;width:100%;height:100%;inset:0;z-index:3;filter:drop-shadow(2px 4px 1px #563107)}
+.chain-shadow{stroke:#422b10;stroke-width:15}.chain-links{stroke:url(#chain-gold);stroke-width:12;stroke-dasharray:5 3}.chain-small{stroke-width:7;stroke-dasharray:3 3;opacity:.9}
+.flying-fortune{position:absolute;inset:0;z-index:6;pointer-events:none}
+.fortune-piece{position:absolute;left:var(--fx);top:var(--fy);rotate:var(--tilt);animation:money-drift 7s ease-in-out infinite;animation-delay:var(--delay);box-shadow:3px 4px #1c282859}
+.red-envelope{width:29px;height:43px;background:linear-gradient(135deg,#e9291b,#990907);border:1px solid #ffe588;display:grid;place-items:center;font:bold 18px var(--serif);color:#ffe173;text-shadow:1px 1px #6e3105}
+.red-envelope:before{content:"";position:absolute;top:0;width:100%;height:12px;border-bottom:1px solid #ffc055;border-radius:0 0 50% 50%}
+.mini-note{width:71px;height:33px;border:4px double #b7c998;background:repeating-linear-gradient(0deg,#dbe1b4 0 1px,#91a47b 1px 2px);color:#364f35;font:bold 21px Georgia,serif;text-align:center}
+@keyframes money-drift{0%,100%{translate:0 -9px;rotate:var(--tilt)}50%{translate:7px 12px;rotate:calc(var(--tilt) + 14deg)}}
+.chip-pile{position:absolute;z-index:9;bottom:17%;width:15%;height:12%;max-height:100px;pointer-events:none}
+.pile-left{left:-1%;rotate:-9deg}.pile-right{right:-1%;rotate:12deg}
+.casino-chip{position:absolute;bottom:0;left:0;width:6.8vw;height:6.8vw;max-width:99px;max-height:99px;border-radius:50%;background:repeating-conic-gradient(var(--chip) 0deg 19deg,#fff2c9 19deg 30deg);border:3px solid #ecd693;box-shadow:1px 3px 0 #514820,2px 6px 0 var(--chip),3px 9px 0 #dfcf87,4px 12px 0 #50331b,5px 15px 5px #12232388;display:grid;place-items:center;font-style:normal}
+.casino-chip:after{content:"";position:absolute;inset:12%;border:1px dashed #f9d873;border-radius:50%}
+.casino-chip b{width:76%;height:76%;background:var(--chip);border:3px double #fff0b3;border-radius:50%;display:grid;place-items:center;color:#ffe69a;font:900 clamp(16px,2vw,28px) Georgia,var(--serif)}
+.emerald{--chip:#075541}.ruby{--chip:#a90d0b}.gold-chip{--chip:#bc820d}
+.casino-chip:nth-child(2){left:32%;bottom:9%;rotate:20deg}.casino-chip:nth-child(3){left:57%;bottom:-9%;rotate:-13deg}
+.jackpot-sign{position:absolute;z-index:7;left:3%;bottom:3.9%;width:17%;max-width:232px;text-align:center;padding:7px 10px 6px;border:5px double #ffe392;background:linear-gradient(135deg,#cb100c,#620500);box-shadow:4px 5px 0 #594013;rotate:-7deg;color:#ffdf79}
+.jackpot-sign small{font-size:8px;letter-spacing:2px}.reels{display:flex;gap:5px;margin:4px auto;justify-content:center}.reels b{background:linear-gradient(#855120,#fff1b0 22%,#fff6cb 50%,#e9c97c 80%,#6f400b);color:#ad0906;font:bold clamp(25px,3vw,44px)/1.05 Georgia,serif;border:2px solid #693809;flex:1;max-width:53px;text-shadow:2px 2px #fdf3c7;animation:reel-shine 4s ease-in-out infinite}.reels b:nth-child(2){animation-delay:-1.3s}.reels b:nth-child(3){animation-delay:-2.6s}.jackpot-sign>span{font:700 9px var(--serif);letter-spacing:3px}
+@keyframes reel-shine{0%,70%,100%{filter:brightness(1)}85%{filter:brightness(1.6);text-shadow:0 0 6px #f96b13}}
+.wealth-badge{position:absolute;right:3.8%;bottom:3.7%;width:15%;height:16%;max-height:132px;z-index:7;color:#63200a;text-align:center;display:flex;align-items:center;justify-content:center;flex-direction:column;background:repeating-conic-gradient(#d99717 0deg 10deg,#ffdd65 10deg 20deg);clip-path:polygon(50% 0,59% 9%,71% 3%,76% 17%,91% 14%,91% 29%,100% 35%,94% 48%,100% 61%,88% 67%,91% 83%,76% 83%,69% 97%,57% 91%,46% 100%,36% 89%,21% 96%,18% 81%,4% 81%,9% 67%,0 58%,7% 47%,0 34%,13% 28%,10% 13%,27% 16%,32% 2%,44% 10%);rotate:9deg;filter:drop-shadow(3px 3px #70421b)}
+.wealth-badge strong{font:900 clamp(27px,3.7vw,56px)/1.1 var(--serif);text-shadow:1px 2px #fff2ba}.wealth-badge small{font:700 10px var(--serif);letter-spacing:2px}.wealth-badge>span{font:700 7px Georgia,serif}
+.ingot{position:absolute;z-index:8;top:73%;width:9%;height:6%;background:linear-gradient(165deg,#fff6a5 4%,#e8ad21 31%,#fff5a0 44%,#c57c0b 65%,#f4ca42);border-radius:0 0 45% 45%;box-shadow:1px 3px #76500e;transform:perspective(200px) rotateX(-15deg) rotate(-10deg)}
+.ingot:before{content:"";position:absolute;inset:-30% -7% 38%;border-radius:0 0 50% 50%;background:linear-gradient(#fff19a,#af690b);clip-path:polygon(0 0,25% 35%,75% 35%,100% 0,85% 100%,15% 100%)}
+.ingot>i{position:absolute;left:25%;top:-22%;width:50%;height:75%;border-radius:50%;background:radial-gradient(ellipse at 35% 24%,#fff6c6,#ffc532 45%,#b37103 80%);border-bottom:3px solid #fce076}
+.ingot-left{left:22%}.ingot-right{right:22%;rotate:18deg}
+.fortune-ribbon{position:absolute;top:4%;z-index:5;padding:4px 16px;color:#ffe796;background:#9d0d09;border:2px solid #e8ba51;box-shadow:3px 3px #332b2866;font:bold 9px var(--serif);letter-spacing:2px;rotate:-10deg}.ribbon-left{left:3%}.ribbon-right{right:3%;rotate:10deg}
+.flying .reels b{animation:reel-shine .9s ease-in-out infinite}.flying .roulette-rays{animation-duration:8s}
+@media(max-width:760px){
+  .edge-glint{width:calc(var(--gs)*.65);height:calc(var(--gs)*.65)}
+  .marquee-bulb{width:4px;height:4px}.marquee-lights{border-width:3px}
+  .roulette-rays{top:33%;width:55%}.rays-left{left:-12%}.rays-right{right:-12%}
+  .gold-chains{height:94%;top:6%}.chain-links{stroke-width:17;stroke-dasharray:8 5}.chain-small{stroke-width:10}
+  .fortune-ribbon{top:5.1%;font-size:5px;letter-spacing:.5px;padding:3px 6px}.ribbon-left{left:1%}.ribbon-right{right:1%}
+  .red-envelope{width:19px;height:29px;font-size:13px}.red-envelope:before{height:8px}.mini-note{width:44px;height:23px;font-size:14px;border-width:3px}
+  .fortune-piece:nth-child(4){left:85%}.fortune-piece:nth-child(7){left:6%}.fortune-piece:nth-child(8){left:92%}
+  .chip-pile{bottom:24%;width:24%;height:8%}.pile-left{left:-5%}.pile-right{right:-4%}
+  .casino-chip{width:12vw;height:12vw;border-width:2px}.casino-chip b{font-size:14px;border-width:2px}
+  .ingot{top:74%;width:13%;height:3.5%}.ingot-left{left:23%}.ingot-right{right:23%}
+  .jackpot-sign{left:1.5%;bottom:6%;width:17%;padding:4px 3px;border-width:3px}.jackpot-sign small{font-size:5px;letter-spacing:0}.jackpot-sign>span{font-size:5px;letter-spacing:0}.reels{gap:1px;margin:3px 0}.reels b{font-size:20px;border-width:1px}
+  .wealth-badge{right:1.4%;bottom:6.5%;width:17%;height:9%}.wealth-badge strong{font-size:24px}.wealth-badge small{font-size:6px;letter-spacing:0}.wealth-badge>span{font-size:4px}
+  .action-aside{visibility:hidden}.lucky-tag{top:79%;font-size:8px}
+}
+@media(max-height:760px) and (min-width:761px){.jackpot-sign{padding:3px 8px;bottom:3%}.reels b{font-size:28px}.wealth-badge{height:19%;bottom:3%}.wealth-badge strong{font-size:36px}.chip-pile{bottom:22%;scale:.85}.ingot{top:72%}}
+@media(max-width:760px) and (max-height:690px){.jackpot-sign{bottom:5%}.wealth-badge{bottom:5.5%}.lucky-tag{top:77%;font-size:7px}.ingot{top:72%}.chip-pile{bottom:26%}}
+@media(prefers-reduced-motion:reduce){.edge-glint,.marquee-bulb{opacity:.8}}

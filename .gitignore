@@ -1,0 +1,33 @@
+node_modules/
+*.log
+test-results/
+playwright-report/
+blob-report/
+
+# Local references, discussion and generated browser previews
+_ref_img/
+讨论.txt
+preview-*.png
+
+# Unused source cutouts; the page uses the print versions
+assets/flying-car.png
+assets/mansion.png
+assets/royal-car.png
+assets/roof.png
+
+# Local credentials and configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python and editor/OS files
+__pycache__/
+*.py[cod]
+.venv/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
