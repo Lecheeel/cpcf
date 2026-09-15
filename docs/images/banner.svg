@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="330" viewBox="0 0 1280 330" role="img" aria-labelledby="title desc">
+  <title id="title">中國人能飛 · CPCF</title>
+  <desc id="desc">紅金色數字海報，Chinese People Can Fly，全球飛行俱樂部。</desc>
+  <defs>
+    <linearGradient id="red"><stop stop-color="#590501"/><stop offset=".48" stop-color="#cc1708"/><stop offset="1" stop-color="#590501"/></linearGradient>
+    <linearGradient id="gold" x2="0" y2="1"><stop stop-color="#ffffd6"/><stop offset=".3" stop-color="#ffd562"/><stop offset=".48" stop-color="#986012"/><stop offset=".54" stop-color="#fff8bd"/><stop offset=".8" stop-color="#efb938"/><stop offset="1" stop-color="#fff2a7"/></linearGradient>
+    <pattern id="dots" width="5" height="5" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".8" fill="#fce2a3" opacity=".2"/></pattern>
+    <pattern id="bulbs" width="32" height="16" patternUnits="userSpaceOnUse"><circle cx="16" cy="8" r="3.3" fill="#fff2af"/><circle cx="16" cy="8" r="6" fill="#ffe59b" opacity=".18"/></pattern>
+    <path id="star" d="M0-24 4-5 24 0 4 5 0 24-4 5-24 0-4-5Z" fill="#fff1ac"/>
+  </defs>
+  <path fill="url(#red)" d="M0 0h1280v330H0z"/><path fill="url(#dots)" d="M0 0h1280v330H0z"/>
+  <g fill="none" stroke="#e9be65"><rect x="7" y="7" width="1266" height="316" stroke-width="3"/><rect x="15" y="15" width="1250" height="300"/><rect x="28" y="29" width="1224" height="272" stroke-width="2"/></g>
+  <path fill="url(#bulbs)" d="M32 8h1216v16H32zM32 306h1216v16H32z"/>
+  <g text-anchor="middle" font-family="Georgia, 'Microsoft YaHei', serif" fill="#ffeaa5">
+    <text x="640" y="66" font-size="12" letter-spacing="7">CPCF INTERNATIONAL FLYING ASSOCIATION</text>
+    <text x="646" y="187" font-family="SimSun, 'Noto Serif TC', serif" font-size="98" font-weight="900" fill="#430701" stroke="#430701" stroke-width="6">中國人能飛</text>
+    <text x="640" y="180" font-family="SimSun, 'Noto Serif TC', serif" font-size="98" font-weight="900" fill="url(#gold)" stroke="#ffe9a0" stroke-width=".8">中國人能飛</text>
+    <text x="640" y="230" font-size="27" font-weight="900" letter-spacing="6">CHINESE PEOPLE CAN FLY</text>
+    <text x="640" y="271" font-size="12" letter-spacing="4">✦ 金裝典藏 ✦ 無需跑道 ✦ 生來能飛 ✦ EST. 2026 ✦</text>
+    <g transform="translate(126 162) rotate(-12)"><circle r="64" fill="#930d05" stroke="#ffe9a0" stroke-width="5"/><circle r="54" fill="none" stroke="#e5ba64" stroke-dasharray="2 3"/><text y="-19" font-size="11" letter-spacing="3">國 際 認 證</text><text y="25" font-size="43" font-weight="bold">能飛</text><text y="44" font-size="8">OFFICIALLY FLYING</text></g>
+    <g transform="translate(1154 162) rotate(12)"><circle r="64" fill="#930d05" stroke="#ffe9a0" stroke-width="5"/><circle r="54" fill="none" stroke="#e5ba64" stroke-dasharray="2 3"/><text y="-19" font-size="11" letter-spacing="3">好 運 當 頭</text><text y="25" font-size="45" font-weight="bold">888</text><text y="44" font-size="8">WORLDWIDE · NO LIMIT</text></g>
+  </g>
+  <use href="#star" x="277" y="117"/><use href="#star" x="1008" y="211"/><use href="#star" transform="translate(933 95) scale(.6)"/><use href="#star" transform="translate(327 238) scale(.6)"/>
+</svg>

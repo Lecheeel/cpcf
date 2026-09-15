@@ -1,27 +1,125 @@
-# 中國人能飛 · CPCF
+<div align="center">
 
-一屏互動海報。原生 HTML、CSS、JavaScript，無運行時依賴，全部素材存放在本地。
+![中國人能飛 · CPCF 金裝典藏](docs/images/banner.svg)
 
-直接雙擊 `index.html` 即可查看。也可以運行：
+**縣城首富 × 賭場開業 × 盜版金碟 × 2005 年 Photoshop**
+
+一張會起飛的數字海報。滿鑽金字、八方來財、金光閃閃，生來就要過度設計。
+
+![HTML](https://img.shields.io/badge/HTML-原生靜態頁面-c29932?style=for-the-badge&labelColor=630700)
+![CSS](https://img.shields.io/badge/CSS-毫不克制-c29932?style=for-the-badge&labelColor=630700)
+![JavaScript](https://img.shields.io/badge/JavaScript-立即起飛-c29932?style=for-the-badge&labelColor=630700)
+
+[海報預覽](#海報預覽) · [本地起飛](#本地起飛) · [壁紙下載](docs/images/wallpaper.jpg) · [分享封面](docs/images/social-preview.png)
+
+**無需跑道 · 全憑實力 · 無需許可 · 生來能飛**
+
+</div>
+
+## 海報預覽
+
+點擊圖片查看原尺寸。
+
+[![CPCF 桌面版：滿鑽金字、懸浮豪車、豪宅、鈔票、撲克牌和老虎機](docs/images/desktop.png)](docs/images/desktop.png)
+
+<div align="center">
+<a href="docs/images/mobile.png"><img src="docs/images/mobile.png" width="300" alt="CPCF 手機版：保留一屏直式海報構圖，提供起飛按鈕和好運老虎機"></a>
+<br>
+<sub>手機也要滿。直式一屏，照樣起飛。</sub>
+</div>
+
+## 金裝豪華配置
+
+| 配置 | 排面 |
+| --- | --- |
+| 滿鑽金字 | 立體金色字面、切面碎鑽、金色爪托 |
+| 賭場開業 | 跑馬燈、籌碼、金鏈、元寶、撲克牌、成捆現鈔 |
+| 立即起飛 | 人車升空、金色紙屑、祝福、累計飛行次數 |
+| 鴻運大獎 | 可點擊的老虎機，拉杆、三組轉輪與四種好運祝福 |
+| 廉價印刷 | 半調網點、顆粒、色偏、粗糙拼貼 |
+| 邊角珠光 | 五種固定星芒，附著在車燈、屋頂、牌角和金幣上 |
+| 收藏級附件 | 開業橫幅、雙層竪聯、金碟、頭等艙通行證 |
+| 聲光俱全 | 可選合成音效、鼠標視差、動畫暫停、減少動效適配 |
+
+音效預設關閉。老虎機也支援鍵盤 Enter／空格；暫停或減少動態效果時仍可接收祝福。
+
+## 本地起飛
+
+**直接雙擊 `index.html` 即可打開。** 全部網站素材都在本地，無需構建，也無需安裝運行依賴。
+
+也可以使用 Node.js 啟動本地服務：
 
 ```sh
+git clone https://github.com/Lecheeel/cpcf.git
+cd cpcf
 npm start
 ```
 
-打開 http://localhost:5173 。修改文件後刷新瀏覽器即可。
+打開 **http://localhost:5173**。修改文件後刷新瀏覽器即可。
 
-「立即起飛」觸發人車升空、金色紙屑、祝福與飛行次數更新；音效預設關閉，開啟後播放 Web Audio 合成音效。頂部可暫停動畫，並遵循系統的減少動態效果偏好。手機保留豎版單屏海報。
+## 海報、壁紙與分享圖
 
-左下角「鴻運大獎」老虎機可點擊或用鍵盤 Enter／空格啟動，拉杆與三組轉輪會播放動畫，停止後依次送上財源廣進、八方來財、鴻運當頭、一飛沖天的祝福。暫停或減少動態效果時保留祝福互動。
+| 圖片 | 尺寸 / 格式 | 用途 |
+| --- | --- | --- |
+| [紅金封面](docs/images/banner.svg) | 1280 × 330 · SVG | README 頂部橫幅 |
+| [桌面預覽](docs/images/desktop.png) | 1440 × 900 · PNG | 查看完整網站構圖 |
+| [手機預覽](docs/images/mobile.png) | 390 × 844 · PNG | 直式海報效果 |
+| [桌面壁紙](docs/images/wallpaper.jpg) | 1920 × 1080 · JPG | 背景圖片、壁紙 |
+| [分享封面](docs/images/social-preview.png) | 1280 × 640 · PNG | GitHub Social preview / 社交分享 |
 
-金字表面使用本地 SVG 碎鑽切面與金色爪托紋樣；另有雕版風格鈔票、成捆現鈔、扇形撲克牌、開業橫幅、雙層竪聯、金碟與頭等艙貼紙。這些新增細節集中在 `maximal.css`，不依賴外部素材服務。
+[![CPCF 社交分享封面](docs/images/social-preview.png)](docs/images/social-preview.png)
 
-素材取自使用者提供的 `_ref_img`，包含人物、棕櫚、豪車和豪宅，屬於本次效果預覽的拼貼用圖。豪宅原圖帶有素材站水印，預覽保留原圖水印；正式公開版本可更換為自有素材。字體使用系統宋體與襯線字體，不依賴在線字體服務。
+分享封面可下載後上傳至 GitHub 倉庫 **Settings → General → Social preview**。README 引用圖片不會自動更改 GitHub 的倉庫分享卡片。
 
-文件：`index.html` 頁面、`style.css` 構圖與動畫、`casino.css` 跑馬燈、筹碼、金鏈、元寶與五種固定邊緣星芒、`script.js` 交互、`assets/` 本地素材。星芒固定在車燈、屋頂、牌角和金幣等邊角，隨物品移動，只改變亮度與大小。
+## 文件與素材
 
-`scripts/prepare_assets.py` 可使用 Pillow 從參考圖重新生成裁切素材，並給汽車和豪宅烘焙半調網點、印刷色偏與顆粒。`*-print.png` 為印刷版本，原始裁切另行保留。
+| 文件 | 內容 |
+| --- | --- |
+| `index.html` | 一屏海報結構 |
+| `style.css` | 主構圖與基礎動畫 |
+| `casino.css` | 跑馬燈、籌碼、金鏈、元寶、邊角星芒 |
+| `maximal.css` | 滿鑽字、雕版鈔票、老虎機、牌匾與金碟 |
+| `script.js` | 起飛、老虎機、音效、視差、暫停 |
+| `assets/` | 網站本地成品素材 |
+| `docs/images/` | 倉庫展示圖片與壁紙 |
+| `scripts/` | 本地服務、瀏覽器檢查、素材處理與截圖 |
 
-Git 僅包含網站運行所需的成品素材。參考原圖、討論記錄、未使用的原始裁切、預覽截圖、依賴目錄和日誌已忽略；克隆後可直接查看網站。素材重製腳本需要本機 `_ref_img/` 原圖，日常運行與測試不需要這些原圖。
+拼貼素材來自使用者提供的參考圖片，包含人物、棕櫚、豪車和豪宅。豪宅原圖的素材站水印保留；圖片權利歸原權利人所有。字體使用系統宋體與襯線字體，不依賴在線字體服務。
 
-檢查：`npm install` 後，先運行 `npm start`，再執行 `npm test`。檢查使用本機 Microsoft Edge，驗證桌面與手機布局、圖片、起飛按鈕、音效、暫停及減少動效模式。
+`scripts/prepare_assets.py` 使用 Pillow 重新裁切原圖，給汽車和豪宅加入半調網點、印刷色偏與顆粒。此腳本需要本機 `_ref_img/` 原圖；克隆後直接查看網站與運行測試不需要原圖。
+
+Git 已忽略參考原圖、討論記錄、未使用的裁切圖、臨時預覽、依賴目錄和日誌；`docs/images/` 中的展示成品會隨倉庫提交。
+
+## 檢查與更新預覽
+
+瀏覽器檢查使用本機 Microsoft Edge：
+
+```sh
+npm install
+npm start
+# 在另一個終端執行
+npm test
+```
+
+涵蓋桌面與手機布局、圖片加載、起飛、老虎機、鍵盤操作、音效、暫停與減少動效模式。
+
+重新生成展示圖片（需 Microsoft Edge；分享封面腳本另需 Pillow 和 Windows 微軟雅黑字體）：
+
+```sh
+node scripts/capture-gallery.cjs
+python scripts/compose-social.py
+```
+
+截圖直接打開本地 HTML，不需要啟動服務。
+
+---
+
+<div align="center">
+
+**CPCF™ — 中國人能飛國際俱樂部**
+
+中國總部：中國 · 飛行高度：∞ · 飛行許可：無限期
+
+<sub>ALL CHINESE PEOPLE RESERVE THE RIGHT TO FLY.</sub>
+
+</div>

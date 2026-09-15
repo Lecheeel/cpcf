@@ -8,6 +8,7 @@ blob-report/
 _ref_img/
 讨论.txt
 preview-*.png
+# Curated repository gallery under docs/images/ is intentionally tracked.
 
 # Unused source cutouts; the page uses the print versions
 assets/flying-car.png
